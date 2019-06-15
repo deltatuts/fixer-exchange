@@ -1,6 +1,6 @@
-# Exoskeleton
+# Fixer.io PHP SDK
 
-**A simple and up to date PHP package foundation (Inspired heavily by league/skeleton)**
+PHP client to interact with https://fixer.io public API
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
