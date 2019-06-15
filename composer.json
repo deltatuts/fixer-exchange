@@ -1,13 +1,13 @@
 {
-    "name": "victoravelar/exoskeleton",
+    "name": "deltatuts/fixer-php-sdk",
     "type": "library",
-    "description": "A simple and up to date PHP package foundation (Inspired heavily by league/skeleton)",
+    "description": "Client to interact with Fixer.io public API",
     "keywords": [
         "victoravelar",
-        "exoskeleton",
-        "php"
+        "fixer.io",
+        "exchange rates"
     ],
-    "homepage": "https://github.com/victoravelar/exoskeleton",
+    "homepage": "https://github.com/deltatuts/fixer-exchange",
     "license": "MIT",
     "authors": [
         {
@@ -18,24 +18,24 @@
         }
     ],
     "require": {
-        "php" : "~7.1"
+        "php" : "~7.2"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.15",
         "nunomaduro/phpinsights": "^1.6",
         "phpmd/phpmd": "^2.6",
         "phpstan/phpstan": "^0.11.1",
-        "phpunit/phpunit": ">=7.0",
+        "phpunit/phpunit": "^8.0",
         "squizlabs/php_codesniffer": "^3.0"
     },
     "autoload": {
         "psr-4": {
-            "VictorAvelar\\Exoskeleton\\": "src"
+            "Deltatuts\\Fixer\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VictorAvelar\\Exoskeleton\\Tests\\": "tests"
+            "Deltatuts\\Fixer\\Tests\\": "tests"
         }
     },
     "scripts": {
