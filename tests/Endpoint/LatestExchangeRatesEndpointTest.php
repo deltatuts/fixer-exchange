@@ -54,9 +54,6 @@ class LatestExchangeRatesEndpointTest extends TestCase
         $client = new FixerHttpClient('mock-key', ['handler' => $this->handler]);
         $e = new LatestExchangeRatesEndpoint($client);
 
-        $this->expectException(InvalidCurrencyCodeException::class);
-        $e->latest('dls');
-
         $response = $e->latest('USD', ['MXN', 'EUR']);
 
         $content = json_decode($response->getBody()->getContents(), true);
@@ -66,5 +63,16 @@ class LatestExchangeRatesEndpointTest extends TestCase
         $this->assertArrayHasKey('success', $content);
         $this->assertTrue($content['success']);
         $this->assertArrayHasKey('rates', $content);
+    }
+
+    /**
+     * @throws GuzzleException
+     * @throws InvalidCurrencyCodeException
+     * @throws MissingAPIKeyException
+     */
+    public function testThrowsExceptionOnInvalidCurrencyCode()
+    {
+        $this->expectException(InvalidCurrencyCodeException::class);
+        (new LatestExchangeRatesEndpoint(new FixerHttpClient('lslsls')))->latest('dollar');
     }
 }
