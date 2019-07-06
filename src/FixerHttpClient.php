@@ -49,4 +49,12 @@ class FixerHttpClient extends Client
         ];
         parent::__construct(array_merge($baseConfig, $config));
     }
+
+    /**
+     * @return string
+     */
+    public function getApiKey(): string
+    {
+        return $this->apiKey;
+    }
 }
