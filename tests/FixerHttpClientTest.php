@@ -1,6 +1,6 @@
 <?php
 
-namespace Deltatuts\Fixer\Test;
+namespace Deltatuts\Fixer\Tests;
 
 use Deltatuts\Fixer\Exception\MissingAPIKeyException;
 use Deltatuts\Fixer\FixerHttpClient;

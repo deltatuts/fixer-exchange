@@ -20,9 +20,9 @@ composer require deltatuts/fixer-php-sdk
 
 ## Usage
 
-```php
-    @TODO
-```
+Please refer to the `examples` folder.
+
+**It requires a valid api key for fixer.io**
 
 ## Change log
 

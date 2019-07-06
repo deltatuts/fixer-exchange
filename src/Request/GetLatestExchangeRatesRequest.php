@@ -6,13 +6,13 @@ use Deltatuts\Fixer\Endpoint\AbstractBaseEndpoint;
 use GuzzleHttp\Psr7\Request;
 
 /**
- * Class GetSupportedSymbolsRequest
+ * Class GetLatestExchangeRatesRequest
  * @package Deltatuts\Fixer\Request
  */
-class GetSupportedSymbolsRequest extends Request
+class GetLatestExchangeRatesRequest extends Request
 {
     /**
-     * GetSupportedSymbolsRequest constructor.
+     * GetLatestExchangeRatesRequest constructor.
      * @param string $uri
      */
     public function __construct(string $uri)

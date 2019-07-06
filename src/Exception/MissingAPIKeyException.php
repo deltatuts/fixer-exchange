@@ -2,13 +2,11 @@
 
 namespace Deltatuts\Fixer\Exception;
 
-use Exception;
-
 /**
  * Class MissingAPIKeyException
  * @package Deltatuts\Fixer\Exception
  */
-class MissingAPIKeyException extends Exception
+class MissingAPIKeyException extends \Exception
 {
     /**
      * MissingAPIKeyException constructor.

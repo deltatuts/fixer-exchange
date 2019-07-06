@@ -24,10 +24,10 @@ abstract class AbstractBaseEndpoint
     /**
      * Keyword to pass the API key on each call.
      */
-    const ACCESS_PARAM = 'access_token';
+    const ACCESS_PARAM = 'access_key';
 
     /**
-     * @var ClientInterface|FixerHttpClient
+     * @var FixerHttpClient
      */
     protected $client;
 
@@ -35,7 +35,7 @@ abstract class AbstractBaseEndpoint
      * AbstractBaseEndpoint constructor.
      * @param ClientInterface $client
      */
-    public function __construct(ClientInterface $client)
+    public function __construct(FixerHttpClient $client)
     {
         $this->client = $client;
     }

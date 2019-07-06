@@ -16,7 +16,7 @@ class AbstractBaseEndpointTest extends TestCase
     {
         $client = new FixerHttpClient('api-key');
         $e = $this->getMockForAbstractClass(AbstractBaseEndpoint::class, [$client]);
-        $this->assertStringContainsString('access_token=api-key', $e->buildUri());
+        $this->assertStringContainsString('access_key=api-key', $e->buildUri());
         $this->assertStringContainsString('foo=bar', $e->buildUri(['foo' => 'bar']));
     }
 }
