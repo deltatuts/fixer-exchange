@@ -54,10 +54,8 @@ class FixerHttpClient extends Client
             'base_uri' => self::BASE_URI,
             RequestOptions::TIMEOUT => self::TIMEOUT
         ];
-
-        $this->initEndpoints();
-
         parent::__construct(array_merge($baseConfig, $config));
+        $this->initEndpoints();
     }
 
     /**

@@ -24,7 +24,7 @@ abstract class AbstractBaseEndpoint
     /**
      * Keyword to pass the API key on each call.
      */
-    const ACCESS_PARAM = 'access_token';
+    const ACCESS_PARAM = 'access_key';
 
     /**
      * @var FixerHttpClient
