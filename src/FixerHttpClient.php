@@ -2,6 +2,8 @@
 
 namespace Deltatuts\Fixer;
 
+use Deltatuts\Fixer\Endpoint\LatestExchangeRatesEndpoint;
+use Deltatuts\Fixer\Endpoint\SymbolsEndpoint;
 use Deltatuts\Fixer\Exception\MissingAPIKeyException;
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
@@ -30,6 +32,16 @@ class FixerHttpClient extends Client
     private $apiKey;
 
     /**
+     * @var SymbolsEndpoint
+     */
+    public $symbols;
+
+    /**
+     * @var LatestExchangeRatesEndpoint
+     */
+    public $rates;
+
+    /**
      * FixerHttpClient constructor.
      *
      * @param string $key
@@ -47,6 +59,9 @@ class FixerHttpClient extends Client
             'base_uri' => self::BASE_URI,
             RequestOptions::TIMEOUT => self::TIMEOUT
         ];
+
+        $this->initEndpoints();
+
         parent::__construct(array_merge($baseConfig, $config));
     }
 
@@ -56,5 +71,14 @@ class FixerHttpClient extends Client
     public function getApiKey(): string
     {
         return $this->apiKey;
+    }
+
+    /**
+     * Initializes all the supported endpoints.
+     */
+    private function initEndpoints()
+    {
+        $this->symbols = new SymbolsEndpoint($this);
+        $this->rates = new LatestExchangeRatesEndpoint($this);
     }
 }
