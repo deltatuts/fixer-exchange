@@ -14,15 +14,10 @@ use GuzzleHttp\RequestOptions;
  */
 class FixerHttpClient extends Client
 {
-    /**
-     * @var string
-     */
     const BASE_URI = "http://data.fixer.io/api";
 
     /**
      * Time to wait in seconds before interrupting the request.
-     *
-     * @var string
      */
     const TIMEOUT = 5;
 

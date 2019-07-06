@@ -13,9 +13,9 @@ class GetLatestExchangeRatesRequest extends Request
 {
     /**
      * GetLatestExchangeRatesRequest constructor.
-     * @param $uri
+     * @param string $uri
      */
-    public function __construct($uri)
+    public function __construct(string $uri)
     {
         parent::__construct(AbstractBaseEndpoint::GET, $uri);
     }

@@ -27,7 +27,7 @@ abstract class AbstractBaseEndpoint
     const ACCESS_PARAM = 'access_token';
 
     /**
-     * @var ClientInterface|FixerHttpClient
+     * @var FixerHttpClient
      */
     protected $client;
 
@@ -35,7 +35,7 @@ abstract class AbstractBaseEndpoint
      * AbstractBaseEndpoint constructor.
      * @param ClientInterface $client
      */
-    public function __construct(ClientInterface $client)
+    public function __construct(FixerHttpClient $client)
     {
         $this->client = $client;
     }

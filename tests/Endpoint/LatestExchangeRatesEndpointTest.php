@@ -54,6 +54,9 @@ class LatestExchangeRatesEndpointTest extends TestCase
         $client = new FixerHttpClient('mock-key', ['handler' => $this->handler]);
         $e = new LatestExchangeRatesEndpoint($client);
 
+        $this->expectException(InvalidCurrencyCodeException::class);
+        $e->latest('dls');
+
         $response = $e->latest('USD', ['MXN', 'EUR']);
 
         $content = json_decode($response->getBody()->getContents(), true);
