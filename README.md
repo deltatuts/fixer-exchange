@@ -59,9 +59,9 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-downloads]: https://img.shields.io/packagist/dt/deltatuts/fixer-php-sdk.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/deltatuts/fixer-php-sdk
-[link-travis]: https://travis-ci.org/vdeltatuts/fixer-php-sdk
-[link-scrutinizer]: https://scrutinizer-ci.com/g/deltatuts/fixer-php-sdk/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/deltatuts/fixer-php-sdk
+[link-travis]: https://travis-ci.org/deltatuts/fixer-exchange
+[link-scrutinizer]: https://scrutinizer-ci.com/g/deltatuts/fixer-exchange/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/deltatuts/fixer-exchange
 [link-downloads]: https://packagist.org/packages/deltatuts/fixer-php-sdk
 [link-author]: https://github.com/VictorAvelar
 [link-contributors]: ../../contributors
