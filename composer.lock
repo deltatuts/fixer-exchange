@@ -1666,16 +1666,16 @@
         },
         {
             "name": "nunomaduro/phpinsights",
-            "version": "v1.8.1",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/phpinsights.git",
-                "reference": "4c5247d95f4bddbcab3a7361b785988cb0759686"
+                "reference": "7453929847df79aeaacddc2753186aa6b16cbdb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/phpinsights/zipball/4c5247d95f4bddbcab3a7361b785988cb0759686",
-                "reference": "4c5247d95f4bddbcab3a7361b785988cb0759686",
+                "url": "https://api.github.com/repos/nunomaduro/phpinsights/zipball/7453929847df79aeaacddc2753186aa6b16cbdb4",
+                "reference": "7453929847df79aeaacddc2753186aa6b16cbdb4",
                 "shasum": ""
             },
             "require": {
@@ -1740,7 +1740,7 @@
                 "quality",
                 "source"
             ],
-            "time": "2019-08-18T21:36:30+00:00"
+            "time": "2019-08-20T14:41:42+00:00"
         },
         {
             "name": "object-calisthenics/phpcs-calisthenics-rules",
