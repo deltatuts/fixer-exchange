@@ -3,6 +3,7 @@
 PHP client to interact with https://fixer.io public API
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=deltatuts/fixer-exchange)](https://dependabot.com)
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
