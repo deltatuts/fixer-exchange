@@ -2100,20 +2100,20 @@
         },
         {
             "name": "phpmd/phpmd",
-            "version": "2.10.0",
+            "version": "2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpmd/phpmd.git",
-                "reference": "58ef9e746a1ab50ad3360d5d301e1229ed2612cb"
+                "reference": "bd5ef43d1dcaf7272605027c959c1c5ff3761f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/58ef9e746a1ab50ad3360d5d301e1229ed2612cb",
-                "reference": "58ef9e746a1ab50ad3360d5d301e1229ed2612cb",
+                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/bd5ef43d1dcaf7272605027c959c1c5ff3761f7a",
+                "reference": "bd5ef43d1dcaf7272605027c959c1c5ff3761f7a",
                 "shasum": ""
             },
             "require": {
-                "composer/xdebug-handler": "^1.0",
+                "composer/xdebug-handler": "^1.0 || ^2.0",
                 "ext-xml": "*",
                 "pdepend/pdepend": "^2.9.1",
                 "php": ">=5.3.9"
@@ -2174,7 +2174,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-26T18:44:44+00:00"
+            "time": "2021-05-11T17:16:16+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -3743,16 +3743,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v4.4.20",
+            "version": "v4.4.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "98606c6fa1a8f55ff964ccdd704275bf5b9f71b3"
+                "reference": "f6d8318c14e4be81525ae47b30e618f0bed4c7b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/98606c6fa1a8f55ff964ccdd704275bf5b9f71b3",
-                "reference": "98606c6fa1a8f55ff964ccdd704275bf5b9f71b3",
+                "url": "https://api.github.com/repos/symfony/config/zipball/f6d8318c14e4be81525ae47b30e618f0bed4c7b3",
+                "reference": "f6d8318c14e4be81525ae47b30e618f0bed4c7b3",
                 "shasum": ""
             },
             "require": {
@@ -3812,7 +3812,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-22T15:36:50+00:00"
+            "time": "2021-04-07T15:47:03+00:00"
         },
         {
             "name": "symfony/console",
@@ -3902,16 +3902,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.4.21",
+            "version": "v4.4.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "b5f97557faa48ead4671bc311cfca423d476e93e"
+                "reference": "778b140b3e8f6890f43dc2c978e58e69f188909a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/b5f97557faa48ead4671bc311cfca423d476e93e",
-                "reference": "b5f97557faa48ead4671bc311cfca423d476e93e",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/778b140b3e8f6890f43dc2c978e58e69f188909a",
+                "reference": "778b140b3e8f6890f43dc2c978e58e69f188909a",
                 "shasum": ""
             },
             "require": {
@@ -3980,7 +3980,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-05T18:16:26+00:00"
+            "time": "2021-04-07T15:47:03+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
