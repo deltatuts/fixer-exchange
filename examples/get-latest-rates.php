@@ -2,10 +2,10 @@
 
 include 'vendor/autoload.php';
 
-use Deltatuts\Fixer\Exception\InvalidCurrencyCodeException;
-use Deltatuts\Fixer\Exception\MissingAPIKeyException;
-use Deltatuts\Fixer\FixerHttpClient;
 use GuzzleHttp\Exception\GuzzleException;
+use Deltatuts\Fixer\FixerHttpClient;
+use Deltatuts\Fixer\Exception\MissingAPIKeyException;
+use Deltatuts\Fixer\Exception\InvalidCurrencyCodeException;
 
 // Put your api key here
 $key = '';

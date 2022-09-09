@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="exoskeleton">
-    <description>The coding standard of exoskeleton package</description>
+<ruleset name="fixer exchange">
+    <description>The coding standard for the fixer exchange</description>
     <arg value="p" />
 
     <config name="ignore_warnings_on_exit" value="1" />
@@ -10,5 +10,5 @@
     <arg value="s" />
 
     <!-- Use the PSR2 Standard-->
-    <rule ref="PSR2" />
+    <rule ref="PSR12" />
 </ruleset>

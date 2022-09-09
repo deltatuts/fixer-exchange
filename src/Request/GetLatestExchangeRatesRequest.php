@@ -2,18 +2,16 @@
 
 namespace Deltatuts\Fixer\Request;
 
-use Deltatuts\Fixer\Endpoint\AbstractBaseEndpoint;
 use GuzzleHttp\Psr7\Request;
+use Deltatuts\Fixer\Endpoint\AbstractBaseEndpoint;
 
 /**
- * Class GetLatestExchangeRatesRequest
- * @package Deltatuts\Fixer\Request
+ * Class GetLatestExchangeRatesRequest.
  */
 class GetLatestExchangeRatesRequest extends Request
 {
     /**
      * GetLatestExchangeRatesRequest constructor.
-     * @param string $uri
      */
     public function __construct(string $uri)
     {

@@ -31,7 +31,7 @@ class SymbolsEndpointTest extends TestCase
      */
     public function testSupported()
     {
-        $res = new Response(200, [], file_get_contents(__DIR__.'/../_data/symbols-response.json'));
+        $res = new Response(200, [], file_get_contents(__DIR__ . '/../_data/symbols-response.json'));
         $this->handler->append($res);
         $client = new FixerHttpClient('mock-key', ['handler' => $this->handler]);
         $e = new SymbolsEndpoint($client);

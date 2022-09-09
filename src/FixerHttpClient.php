@@ -2,24 +2,23 @@
 
 namespace Deltatuts\Fixer;
 
-use Deltatuts\Fixer\Endpoint\LatestExchangeRatesEndpoint;
-use Deltatuts\Fixer\Endpoint\SymbolsEndpoint;
-use Deltatuts\Fixer\Exception\MissingAPIKeyException;
-use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
+use GuzzleHttp\Client;
+use Deltatuts\Fixer\Exception\MissingAPIKeyException;
+use Deltatuts\Fixer\Endpoint\SymbolsEndpoint;
+use Deltatuts\Fixer\Endpoint\LatestExchangeRatesEndpoint;
 
 /**
- * Class FixerHttpClient
- * @package Deltatuts\Fixer
+ * Class FixerHttpClient.
  */
 class FixerHttpClient extends Client
 {
-    const BASE_URI = "http://data.fixer.io/api";
+    public const BASE_URI = 'http://data.fixer.io/api';
 
     /**
      * Time to wait in seconds before interrupting the request.
      */
-    const TIMEOUT = 5;
+    public const TIMEOUT = 5;
 
     /**
      * @var string
@@ -39,8 +38,6 @@ class FixerHttpClient extends Client
     /**
      * FixerHttpClient constructor.
      *
-     * @param string $key
-     * @param array $config
      * @throws MissingAPIKeyException
      */
     public function __construct(string $key, array $config = [])
@@ -52,15 +49,12 @@ class FixerHttpClient extends Client
         $this->apiKey = $key;
         $baseConfig = [
             'base_uri' => self::BASE_URI,
-            RequestOptions::TIMEOUT => self::TIMEOUT
+            RequestOptions::TIMEOUT => self::TIMEOUT,
         ];
         parent::__construct(array_merge($baseConfig, $config));
         $this->initEndpoints();
     }
 
-    /**
-     * @return string
-     */
     public function getApiKey(): string
     {
         return $this->apiKey;

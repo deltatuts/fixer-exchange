@@ -1,0 +1,36 @@
+name: CI
+
+on:
+    push:
+        branches:
+        - master
+        paths-ignore:
+        - ".devcontainer/"
+        - ".gitignore"
+        - "LICENSE"
+        - ".github/*.yml"
+        - ".github/ISSUE_TEMPLATE/*.md"
+        - ".github/*.md"
+        - "examples/*.php"
+    pull_request:
+        paths-ignore:
+        - ".devcontainer/"
+        - ".gitignore"
+        - "LICENSE"
+        - ".github/*.yml"
+        - ".github/ISSUE_TEMPLATE/*.md"
+        - ".github/*.md"
+        - "examples/*.php"
+
+jobs:
+    testing:
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v2
+        - uses: php-actions/composer@v5 # or alternative dependency management
+        - uses: php-actions/phpunit@v3
+          with:
+            configuration: './phpunit.xml.dist'
+            bootstrap: 'vendor/autoload.php'
+            php_extensions: json

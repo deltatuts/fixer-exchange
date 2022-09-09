@@ -49,7 +49,7 @@ class LatestExchangeRatesEndpointTest extends TestCase
      */
     public function testLatest()
     {
-        $res = new Response(200, [], file_get_contents(__DIR__.'/../_data/latest-response.json'));
+        $res = new Response(200, [], file_get_contents(__DIR__ . '/../_data/latest-response.json'));
         $this->handler->append($res);
         $client = new FixerHttpClient('mock-key', ['handler' => $this->handler]);
         $e = new LatestExchangeRatesEndpoint($client);

@@ -2,26 +2,24 @@
 
 namespace Deltatuts\Fixer\Endpoint;
 
-use Deltatuts\Fixer\Exception\InvalidCurrencyCodeException;
-use Deltatuts\Fixer\Request\GetLatestExchangeRatesRequest;
-use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
+use GuzzleHttp\Exception\GuzzleException;
+use Deltatuts\Fixer\Request\GetLatestExchangeRatesRequest;
+use Deltatuts\Fixer\Exception\InvalidCurrencyCodeException;
 
 /**
- * Class LatestExchangeRatesEndpoint
- * @package Deltatuts\Fixer\Endpoint
+ * Class LatestExchangeRatesEndpoint.
  */
 class LatestExchangeRatesEndpoint extends AbstractBaseEndpoint
 {
-    const ENDPOINT_URI = 'latest';
+    public const ENDPOINT_URI = 'latest';
 
     /**
      * Returns the latest spot price for the supported currencies.
      *
      * @param string $baseCurrency base currency alpha3 code (if different than EUR)
-     * @param array $symbols array of alpha3 codes to filter the response
+     * @param array  $symbols      array of alpha3 codes to filter the response
      *
-     * @return ResponseInterface
      * @throws InvalidCurrencyCodeException
      * @throws GuzzleException
      */

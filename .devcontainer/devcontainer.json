@@ -18,7 +18,15 @@
             // Set *default* container specific settings.json values on container create.
             "settings": {
                 "terminal.integrated.shellIntegration.enabled": true,
-                "php.validate.executablePath": "/usr/local/bin/php"
+                "php.validate.executablePath": "/usr/local/bin/php",
+                "phpsab.fixerEnable": true,
+                "phpsab.snifferEnable": true,
+                "phpsab.composerJsonPath": "composer.json",
+                "phpsab.executablePathCS": "vendor/bin/phpcs",
+                "phpsab.executablePathCBF": "vendor/bin/phpcbs",
+                "phpsab.snifferArguments": ["-n", "--ignore=tests/*"],
+                "phpsab.standard": "PSR12",
+                "phpsab.autoRulesetSearch": true
             },
 
             // Add the IDs of extensions you want installed when the container is created.
@@ -30,7 +38,8 @@
 				"onecentlin.laravel-extension-pack",
 				"pnp.polacode",
 				"xdebug.php-debug",
-				"faelv.composer-companion"
+				"faelv.composer-companion",
+                "ValeryanM.vscode-phpsab"
 			]
         }
     },

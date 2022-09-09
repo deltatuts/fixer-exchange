@@ -12,19 +12,19 @@ abstract class AbstractBaseEndpoint
      *
      * @var string
      */
-    const ENDPOINT_URI = '';
+    public const ENDPOINT_URI = '';
 
     /**
      * HTTP GET method.
      *
      * @var string
      */
-    const GET = 'GET';
+    public const GET = 'GET';
 
     /**
      * Keyword to pass the API key on each call.
      */
-    const ACCESS_PARAM = 'access_key';
+    public const ACCESS_PARAM = 'access_key';
 
     /**
      * @var FixerHttpClient
@@ -33,6 +33,7 @@ abstract class AbstractBaseEndpoint
 
     /**
      * AbstractBaseEndpoint constructor.
+     *
      * @param ClientInterface $client
      */
     public function __construct(FixerHttpClient $client)
@@ -42,9 +43,6 @@ abstract class AbstractBaseEndpoint
 
     /**
      * Query parameters to be appended to the endpoint URI.
-     *
-     * @param array $params
-     * @return string
      */
     public function buildUri(array $params = []): string
     {

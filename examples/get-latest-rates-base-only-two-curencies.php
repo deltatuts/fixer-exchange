@@ -2,10 +2,10 @@
 
 include 'vendor/autoload.php';
 
-use Deltatuts\Fixer\Exception\InvalidCurrencyCodeException;
-use Deltatuts\Fixer\Exception\MissingAPIKeyException;
-use Deltatuts\Fixer\FixerHttpClient;
 use GuzzleHttp\Exception\GuzzleException;
+use Deltatuts\Fixer\FixerHttpClient;
+use Deltatuts\Fixer\Exception\MissingAPIKeyException;
+use Deltatuts\Fixer\Exception\InvalidCurrencyCodeException;
 
 // Put your api key here
 $key = '';
@@ -19,7 +19,7 @@ try {
 // Get the supported symbols
 try {
     // Requires a paid plan
-    $response = $client->rates->latest(null, ['MXN', 'USD']);
+    $response = $client->rates->latest('EUR', ['MXN', 'USD']);
 
     print_r(json_decode($response->getBody()->getContents(), true));
 } catch (GuzzleException $e) {

@@ -2,18 +2,16 @@
 
 namespace Deltatuts\Fixer\Request;
 
-use Deltatuts\Fixer\Endpoint\AbstractBaseEndpoint;
 use GuzzleHttp\Psr7\Request;
+use Deltatuts\Fixer\Endpoint\AbstractBaseEndpoint;
 
 /**
- * Class GetSupportedSymbolsRequest
- * @package Deltatuts\Fixer\Request
+ * Class GetSupportedSymbolsRequest.
  */
 class GetSupportedSymbolsRequest extends Request
 {
     /**
      * GetSupportedSymbolsRequest constructor.
-     * @param string $uri
      */
     public function __construct(string $uri)
     {

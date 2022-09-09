@@ -2,9 +2,9 @@
 
 include 'vendor/autoload.php';
 
-use Deltatuts\Fixer\Exception\MissingAPIKeyException;
-use Deltatuts\Fixer\FixerHttpClient;
 use GuzzleHttp\Exception\GuzzleException;
+use Deltatuts\Fixer\FixerHttpClient;
+use Deltatuts\Fixer\Exception\MissingAPIKeyException;
 
 // Put your api key here
 $key = '';
