@@ -17,6 +17,7 @@
         "vscode": {
             // Set *default* container specific settings.json values on container create.
             "settings": {
+                "terminal.integrated.shellIntegration.enabled": true,
                 "php.validate.executablePath": "/usr/local/bin/php"
             },
 
@@ -35,15 +36,7 @@
     },
 
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
-    // "forwardPorts": [8080],
-
-    // Use 'portsAttributes' to set default properties for specific forwarded ports. More info: https://code.visualstudio.com/docs/remote/devcontainerjson-reference.
-    "portsAttributes": {
-        "8000": {
-            "label": "Hello Remote World",
-            "onAutoForward": "notify"
-        }
-    },
+    "forwardPorts": [8080],
 
     // Use 'otherPortsAttributes' to configure any ports that aren't configured using 'portsAttributes'.
     // "otherPortsAttributes": {

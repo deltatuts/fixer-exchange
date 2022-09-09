@@ -74,4 +74,6 @@ phpcs.xml
 phpunit.xml
 .phpunit.*
 
+composer.lock
+
 # End of https://www.gitignore.io/api/macos,phpstorm,phpstorm+all,phpcodesniffer
